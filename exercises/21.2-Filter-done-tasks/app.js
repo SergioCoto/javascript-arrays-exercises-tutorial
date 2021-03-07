@@ -10,3 +10,11 @@ let tasks = [
 ];
 
 //your code here
+
+let newTasks=tasks.filter(function(valor){  
+    if ('done' in valor && valor.done===true){   
+    return true}
+    
+  });   
+
+console.log(newTasks);
